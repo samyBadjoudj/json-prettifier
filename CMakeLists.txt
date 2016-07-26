@@ -18,7 +18,7 @@ project(json-prettifier)
 
 set (JSON_PRETTY_NAME \"json-prettifier\")
 set (JSON_PRETTY_VERSION_MAJOR 1)
-set (JSON_PRETTY_VERSION_MINOR 0)
+set (JSON_PRETTY_VERSION_MINOR 4)
 set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
 set(SOURCE_FILES json-prettifier.c)
 
@@ -27,9 +27,8 @@ configure_file (
         "${PROJECT_SOURCE_DIR}/json-prettifier.h.in"
         "${PROJECT_BINARY_DIR}/json-prettifier.h"
 )
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(GLIB REQUIRED glib-2.0)
-pkg_check_modules(GLIBJSON REQUIRED json-glib-1.0)
+
+
 include_directories(/usr/include/)
 include_directories(/usr/include/json-glib-1.0/)
 include_directories(/usr/include/glib-2.0/)
@@ -37,4 +36,4 @@ include_directories(/usr/lib/x86_64-linux-gnu/glib-2.0/include)
 link_directories(/usr/lib/x86_64-linux-gnu/)
 add_executable(json-prettifier ${SOURCE_FILES})
 install(TARGETS json-prettifier DESTINATION bin)
-target_link_libraries(json-prettifier  ${GLIB_LIBRARIES} ${GLIBJSON_LIBRARIES})
+target_link_libraries(json-prettifier  json-glib-1.0 pthread gio-2.0 gobject-2.0 glib-2.0)
