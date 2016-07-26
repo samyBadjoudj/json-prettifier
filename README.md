@@ -3,8 +3,8 @@
 
 Add these lines in /etc/apt/sources.list
 
-deb http://ppa.launchpad.net/samy-badjoudj/json-prettifier/ubuntu trusty main 
-deb-src http://ppa.launchpad.net/samy-badjoudj/json-prettifier/ubuntu trusty main 
+deb http://ppa.launchpad.net/samy-badjoudj/json-prettifier/ubuntu xenial main 
+deb-src http://ppa.launchpad.net/samy-badjoudj/json-prettifier/ubuntu xenial main 
 
 sudo apt-get update;
 sudo apt-get insall json-prettifier;

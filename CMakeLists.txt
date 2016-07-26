@@ -18,7 +18,7 @@ project(json-prettifier)
 
 set (JSON_PRETTY_NAME \"json-prettifier\")
 set (JSON_PRETTY_VERSION_MAJOR 1)
-set (JSON_PRETTY_VERSION_MINOR 4)
+set (JSON_PRETTY_VERSION_MINOR 5)
 set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
 set(SOURCE_FILES json-prettifier.c)
 
