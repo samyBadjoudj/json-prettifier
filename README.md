@@ -17,3 +17,9 @@ usage :
 Put json as stdin : 
  cat json_file.json | json-prettifier.c 
  or cat json_file.json | json-prettifier | less -R
+
+
+screenshot:
+
+
+<img src="https://s31.postimg.org/3jp5u44ff/json_pretti.png" />
