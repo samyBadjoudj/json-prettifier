@@ -11,7 +11,7 @@ sudo apt-get insall json-prettifier;
 
 or download it directly : 
 
-https://launchpad.net/~samy-badjoudj/+archive/ubuntu/json-prettifier/+files/json-prettifier_1.4-0ubuntu1_amd64.deb
+[get the package] (https://launchpad.net/~samy-badjoudj/+archive/ubuntu/json-prettifier/+files/json-prettifier_1.4-0ubuntu1_amd64.deb)
 
 usage :
 Put json as stdin : 
